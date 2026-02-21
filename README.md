@@ -74,5 +74,5 @@ tennis-tracker/
 
 ```bash
 # Remove cached Kaggle dataset (~2.4GB)
-rm -rf ~/.cache/kagglehub/
+rm -rf ~/.cache/kagglehub/datasets/sofuskonglevoll/
 ```
