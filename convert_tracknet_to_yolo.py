@@ -20,7 +20,8 @@ except Exception:
     pass  # Already logged in or using env var
 
 # Download TrackNet dataset from Kaggle
-# https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
+# https://www.kaggle.com/datasets/sofuskonglevoll/tracknet-tennis
+# Uses cached version if already downloaded (no re-download)
 DATASET_DIR = Path(kagglehub.dataset_download("sofuskonglevoll/tracknet-tennis"))
 
 # Output directory (current directory)
