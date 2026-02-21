@@ -9,9 +9,15 @@ import csv
 import shutil
 from pathlib import Path
 
-# Configuration
-DATASET_DIR = Path("/Users/graywzc/Downloads/Dataset")
-OUTPUT_DIR = Path("/Users/graywzc/.openclaw/workspace-codex-main/tennis_yolo")
+# Install kagglehub if needed: pip install kagglehub
+import kagglehub
+
+# Download TrackNet dataset from Kaggle
+# https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
+DATASET_DIR = Path(kagglehub.dataset_download("sofuskonglevull/tracknet-tennis"))
+
+# Output directory (current directory)
+OUTPUT_DIR = Path(__file__).parent / "data" / "tennis_yolo"
 
 # YOLO class: 0 = ball
 CLASS_ID = 0
