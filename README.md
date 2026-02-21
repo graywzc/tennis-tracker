@@ -59,7 +59,7 @@ pip install kagglehub
 # Convert TrackNet to YOLO format
 # This automatically downloads the dataset from Kaggle
 # Output goes to data/tennis_yolo/
-python convert_tracknet_to_yolo.py
+python3 convert_tracknet_to_yolo.py
 ```
 
 Dataset: https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
