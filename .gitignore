@@ -1,0 +1,18 @@
+# Dataset - too large to commit
+Dataset/
+
+# YOLO training data (can be regenerated)
+data/
+
+# Model checkpoints
+models/
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
