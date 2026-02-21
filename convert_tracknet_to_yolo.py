@@ -12,6 +12,13 @@ from pathlib import Path
 # Install kagglehub if needed: pip install kagglehub
 import kagglehub
 
+# Login to Kaggle (prompts for token if not already authenticated)
+# Or set KAGGLE_API_TOKEN env var, or use ~/.kaggle/access_token
+try:
+    kagglehub.login()
+except Exception:
+    pass  # Already logged in or using env var
+
 # Download TrackNet dataset from Kaggle
 # https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
 DATASET_DIR = Path(kagglehub.dataset_download("sofuskonglevull/tracknet-tennis"))
