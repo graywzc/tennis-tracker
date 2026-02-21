@@ -21,7 +21,7 @@ except Exception:
 
 # Download TrackNet dataset from Kaggle
 # https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
-DATASET_DIR = Path(kagglehub.dataset_download("sofuskonglevull/tracknet-tennis"))
+DATASET_DIR = Path(kagglehub.dataset_download("sofuskonglevoll/tracknet-tennis"))
 
 # Output directory (current directory)
 OUTPUT_DIR = Path(__file__).parent / "data" / "tennis_yolo"
