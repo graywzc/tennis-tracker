@@ -15,11 +15,6 @@ YOLO-based tennis ball detection from TrackNet dataset.
    chmod 600 ~/.kaggle/access_token
    ```
 
-## Dataset
-
-- **Original**: `/Users/graywzc/Downloads/Dataset` (2.5GB, 95 clips, ~20K frames)
-- **Training**: `data/tennis_yolo/` (1.1GB, ~8K images with ball annotations)
-
 ## Training Data Preparation
 
 ```bash
@@ -42,16 +37,9 @@ Dataset: https://www.kaggle.com/datasets/sofuskonglevull/tracknet-tennis
 
 ## Cloud Sharing
 
-To share the dataset without git:
-
 ```bash
-# Zip the training data (exclude large raw videos if any)
-cd data/tennis_yolo
-zip -r ../../tennis_yolo_data.zip .
-
-# Or zip everything except .gitignored files:
-cd ../..
-zip -r tennis-tracker-data.zip tennis-tracker/Dataset tennis-tracker/data
+# Zip the data folder
+zip -r data.zip data/
 ```
 
 ## Training
