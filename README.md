@@ -4,40 +4,15 @@ YOLO-based tennis ball detection from TrackNet dataset.
 
 ## Kaggle API Setup
 
-To download datasets from Kaggle, you need API credentials.
-
-### Option 1: Environment Variable (Recommended)
-
 1. Go to https://www.kaggle.com/settings
-2. Click "Generate New Token" under "API" section
-3. Copy the token (starts with `xxxxx...`)
-4. Set it as an environment variable:
+2. Click "Generate New Token" under "API" section (downloads `kaggle.json`)
+3. Save to `~/.kaggle/kaggle.json`:
 
-   **macOS/Linux:**
-   ```bash
-   export KAGGLE_API_TOKEN="your_token_here"
-   ```
-
-   **Windows (PowerShell):**
-   ```bash
-   $env:KAGGLE_API_TOKEN="your_token_here"
-   ```
-
-### Option 2: Token File
-
-1. Generate token as above (downloads `kaggle.json`)
-2. Save to `~/.kaggle/access_token` (new) or `~/.kaggle/kaggle.json` (legacy)
-
-   **macOS/Linux:**
    ```bash
    mkdir -p ~/.kaggle
    mv ~/Downloads/kaggle.json ~/.kaggle/kaggle.json
    chmod 600 ~/.kaggle/kaggle.json
    ```
-
-### Option 3: Interactive Login
-
-The script will prompt you to enter your token if not authenticated.
 
 ## Dataset
 
