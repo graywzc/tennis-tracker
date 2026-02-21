@@ -102,7 +102,7 @@ def main():
     for i, label_file in enumerate(label_files):
         clip_dir = label_file.parent
         images_dir = clip_dir
-        game_name = clip_dir.parent.parent.name
+        game_name = clip_dir.parent.name
         clip_name = clip_dir.name
         
         # Create unique prefix from game and clip name
