@@ -5,13 +5,14 @@ YOLO-based tennis ball detection from TrackNet dataset.
 ## Kaggle API Setup
 
 1. Go to https://www.kaggle.com/settings
-2. Click "Generate New Token" under "API" section (downloads `kaggle.json`)
-3. Save to `~/.kaggle/kaggle.json`:
+2. Click "Generate New Token" under "API" section
+3. Save the token to `~/.kaggle/access_token`:
 
    ```bash
    mkdir -p ~/.kaggle
-   mv ~/Downloads/kaggle.json ~/.kaggle/kaggle.json
-   chmod 600 ~/.kaggle/kaggle.json
+   # Copy the token (starts with KGAT_...) from Kaggle settings page
+   echo "your_token_here" > ~/.kaggle/access_token
+   chmod 600 ~/.kaggle/access_token
    ```
 
 ## Dataset
