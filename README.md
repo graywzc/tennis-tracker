@@ -2,16 +2,42 @@
 
 YOLO-based tennis ball detection from TrackNet dataset.
 
+## Kaggle API Setup
+
+To download datasets from Kaggle, you need API credentials:
+
+1. **Generate API Token**:
+   - Go to https://www.kaggle.com/account
+   - Click "Create New Token" under "API"
+   - This downloads `kaggle.json`
+
+2. **Configure on Machine**:
+
+   **macOS/Linux:**
+   ```bash
+   mkdir -p ~/.kaggle
+   mv ~/Downloads/kaggle.json ~/.kaggle/
+   chmod 600 ~/.kaggle/kaggle.json
+   ```
+
+   **Windows:**
+   - Copy `kaggle.json` to `C:\Users\<username>\.kaggle\kaggle.json`
+
+3. **Verify**:
+   ```bash
+   kaggle datasets download -d sofuskonglevull/tracknet-tennis
+   ```
+
 ## Dataset
 
 - **Original**: `/Users/graywzc/Downloads/Dataset` (2.5GB, 95 clips, ~20K frames)
 - **Training**: `data/tennis_yolo/` (1.1GB, ~8K images with ball annotations)
 
-## Setup
+## Training Data Preparation
 
 ```bash
 # Create virtual environment
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 # Install dependencies
