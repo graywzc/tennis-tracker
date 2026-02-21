@@ -135,7 +135,7 @@ def main():
     yaml_content = f"""# Tennis Ball Detection Dataset
 # Converted from TrackNet Tennisi
 
-path: {OUTPUT_DIR}
+path: .
 train: images/train
 val: images/val
 
