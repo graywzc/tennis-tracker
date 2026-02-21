@@ -69,3 +69,10 @@ tennis-tracker/
 - Images are 1280x720 (720p)
 - Bounding box: 20x20 pixels around ball center
 - 80/20 train/val split by clip
+
+## Cleanup
+
+```bash
+# Remove cached Kaggle dataset (~2.4GB)
+rm -rf ~/.cache/kagglehub/
+```
