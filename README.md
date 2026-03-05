@@ -49,6 +49,12 @@ zip -r data.zip data/
 yolo detect train data=data/tennis_yolo/data.yaml model=yolo11s.pt epochs=100 imgsz=1280
 ```
 
+## Ball Detection Inference (macOS)
+
+```bash
+yolo detect predict model=runs/detect/train/weights/best.pt source=IMG_9063_1m.mov
+```
+
 ## Project Structure
 
 ```
